@@ -7,6 +7,8 @@
 <title>Livros de Java, Android, iPhone, Ruby, PHP e muito mais - Casa do Código</title>
 </head>
 <body>
+	<h1>Lista de Produtos</h1>
+	<p>${sucesso}</p>
 	<table>
 		<tr>
 			<td>Título</td>
@@ -23,5 +25,4 @@
 		</c:forEach>
 	</table>
 </body>
-
 </html>
