@@ -19,7 +19,6 @@
 			<label>Páginas</label> <input type="text" name="paginas" />
 		</div>
 
-
 		<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
 			<div>
 				<label>${tipoPreco}</label> <input type="text"
@@ -27,7 +26,6 @@
 					name="precos[${status.index}].tipo" value="${tipoPreco}" />
 			</div>
 		</c:forEach>
-
 
 		<button type="submit">Cadastrar</button>
 	</form>
