@@ -4,8 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Livros de Java, Android, iPhone, Ruby, PHP e muito mais -
-	Casa do Código</title>
+<title>Livros de Java, Android, iPhone, Ruby, PHP e muito mais - Casa do Código</title>
 </head>
 <body>
 	<form action="/casadocodigo/produtos" method="post">
