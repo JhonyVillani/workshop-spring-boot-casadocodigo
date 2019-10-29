@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <!DOCTYPE html>
 <html>
@@ -32,13 +33,13 @@
 
 	<header id="layout-header">
 		<div class="clearfix container">
-			<a href="/" id="logo"> </a>
+			<a href="${contextPath }/" id="logo"> </a>
 			<div id="header-content">
 				<nav id="main-nav">
 
 					<ul class="clearfix">
 						<li>
-							<a href="/carrinho" rel="nofollow">
+							<a href="${contextPath }/carrinho" rel="nofollow">
 								Carrinho (${carrinhoCompras.quantidade })
 							</a>
 						</li>
@@ -76,7 +77,8 @@
 		</header>
 
 		<section class="buy-options clearfix">
-			<form action='<c:url value="/carrinho/add" />' method="post" class="container">
+			<form:form servletRelativeAction="${contextPath }carrinho/add" method="post"
+			cssClass="container">
 				<input type="hidden" value="${produto.id }" name="produtoId" >
 				<ul id="variants" class="clearfix">
 					<c:forEach items="${produto.precos }" var="preco">
@@ -89,7 +91,7 @@
 					</c:forEach>
 				</ul>
 				<button type="submit" class="submit-image icon-basket-alt" title="Compre Agora ${produto.titulo }"></button>
-			</form>
+			</form:form>
 		</section>
 
 		<div class="container">
