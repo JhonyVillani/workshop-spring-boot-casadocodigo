@@ -5,7 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
 
-<tags:pageTemplate>
+<tags:pageTemplate titulo="Livros de Java, Android, iOS, Mobile e muito mais...">
 <c:url value="/" var="contextPath" />
 	<article id="livro-css-eficiente">
 		<header id="product-highlight" class="clearfix">

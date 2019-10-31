@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
 
-<tags:pageTemplate>
+<tags:pageTemplate titulo="Livros de Java, Android, iOS, Mobile e muito mais...">
 <c:url value="/" var="contextPath" />
     <section id="index-section" class="container middle">
         <h1 class="cdc-call">Últimos dias com os preços promocionais. Aproveite!</h1>
